@@ -37,19 +37,18 @@ ax3.set_ylabel('Tip/Size')
 ax3.legend()
 st.pyplot(fig3)
 
-# Bar chart with day against tip
-plt.bar(data['day'], data['tip'])
+# Bar chart with day against tip (plot keempat)
+fig4, ax4 = plt.subplots()
+ax4.bar(data['day'], data['tip'])
+ax4.set_title("Bar Chart")
+ax4.set_xlabel('Day')
+ax4.set_ylabel('Tip')
+st.pyplot(fig4)
 
-plt.title("Bar Chart")
-
-# Setting the X and Y labels
-plt.xlabel('Day')
-plt.ylabel('Tip')
-
-# histogram of total_bills
-plt.hist(data['total_bill'])
-
-plt.title("Histogram")
-
-# Adding the legends
-plt.show()
+# Histogram of total_bills (plot kelima)
+fig5, ax5 = plt.subplots()
+ax5.hist(data['total_bill'])
+ax5.set_title("Histogram")
+ax5.set_xlabel('Total Bill')
+ax5.set_ylabel('Frequency')
+st.pyplot(fig5)
