@@ -76,9 +76,5 @@ female_data = data[data['sex'] == 'Female']
 # Create a figure using Plotly Express
 fig = px.histogram(data, x='total_bill', color='sex')
 
-# Update the figure to add a trace for male_data and female_data
-fig.add_trace(px.histogram(male_data, x='total_bill', color_discrete_sequence=['blue']).data[0])
-fig.add_trace(px.histogram(female_data, x='total_bill', color_discrete_sequence=['pink']).data[0])
-
 # Show the figure
 st.plotly_chart(fig)
