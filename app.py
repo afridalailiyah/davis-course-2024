@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-
 import matplotlib.pyplot as plt
 
 url = "https://raw.githubusercontent.com/afridalailiyah/davis-course-2024/master/tips.csv"
@@ -24,4 +23,4 @@ plt.ylabel('Tip')
 
 plt.colorbar()
 
-plt.show()
+st.pyplot()
