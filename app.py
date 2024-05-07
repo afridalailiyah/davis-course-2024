@@ -11,8 +11,8 @@ data = pd.read_csv(url)
 st.write(data.head(10))
 
 # Scatter plot with day against tip
-plt.scatter(data['day'], data['tip'], c=data['size'], 
-			s=data['total_bill'])
+fig, ax = plt.subplots()
+scatter = ax.scatter(data['day'], data['tip'], c=data['size'], s=data['total_bill'])
 
 # Adding Title to the Plot
 plt.title("Scatter Plot")
@@ -21,6 +21,6 @@ plt.title("Scatter Plot")
 plt.xlabel('Day')
 plt.ylabel('Tip')
 
-plt.colorbar()
+plt.colorbar(scatter)
 
-st.pyplot()
+st.pyplot(fig)
