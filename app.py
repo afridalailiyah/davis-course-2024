@@ -51,8 +51,10 @@ plt.hist(data['total_bill'])
 
 plt.title("Histogram")
 
-# draw lineplot
-sns.lineplot(x="sex", y="total_bill", data=data)
+# Set mode.use_inf_as_null to True
+with pd.option_context('mode.use_inf_as_null', True):
+    # draw lineplot
+    sns.lineplot(x="sex", y="total_bill", data=data)
 
 # setting the title using Matplotlib
 plt.title('Title using Matplotlib Function')
@@ -66,23 +68,23 @@ fig = px.scatter(data, x="day", y="tip", color='sex')
 fig = px.line(data, y='tip', color='sex')
 
 plot = px.Figure(data=[px.Scatter(
-	y=data['tip'],
-	mode='lines',)
+    y=data['tip'],
+    mode='lines',)
 ])
 
 plot.update_layout(
-	xaxis=dict(
-		rangeselector=dict(
-			buttons=list([
-				dict(count=1,
-					step="day",
-					stepmode="backward"),
-			])
-		),
-		rangeslider=dict(
-			visible=True
-		),
-	)
+    xaxis=dict(
+        rangeselector=dict(
+            buttons=list([
+                dict(count=1,
+                    step="day",
+                    stepmode="backward"),
+            ])
+        ),
+        rangeslider=dict(
+            visible=True
+        ),
+    )
 )
 
 st.pyplot(fig)
