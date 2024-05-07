@@ -83,4 +83,4 @@ plot.update_layout(
 	)
 )
 
-plot.show()
+st.plotly_chart(plot)
