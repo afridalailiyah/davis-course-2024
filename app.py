@@ -20,8 +20,6 @@ plt.title("Scatter Plot")
 plt.xlabel('Day')
 plt.ylabel('Tip')
 
-st.pyplot(fig)
-
 # Scatter plot with day against tip
 fig, ax = plt.subplots()
 scatter = ax.scatter(data['day'], data['tip'], c=data['size'], s=data['total_bill'])
@@ -34,5 +32,16 @@ plt.xlabel('Day')
 plt.ylabel('Tip')
 
 plt.colorbar(scatter)
+
+# Scatter plot with day against tip
+plt.plot(data['tip'])
+plt.plot(data['size'])
+
+# Adding Title to the Plot
+plt.title("Scatter Plot")
+
+# Setting the X and Y labels
+plt.xlabel('Day')
+plt.ylabel('Tip')
 
 st.pyplot(fig)
