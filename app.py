@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Menambahkan judul dengan st.title()
-st.title("💻 Menyajikan data dari tips.csv pada platform Streamlit!")
+st.title("💻 Menyajikan data tips.csv pada platform Streamlit!")
 
 url = "https://raw.githubusercontent.com/afridalailiyah/davis-course-2024/master/tips.csv"
 
