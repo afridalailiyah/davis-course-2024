@@ -61,10 +61,6 @@ ax5.set_xlabel('Total Bill')
 ax5.set_ylabel('Frequency')
 st.pyplot(fig5)
 
-# draw lineplot
-sns.lineplot(x="sex", y="total_bill", data=data)
-plt.title('Title using Matplotlib Function')
-
 # Scatter plot with day against tip (plot keenam)
 fig6, ax6 = plt.subplots()
 sns.scatterplot(x='day', y='tip', data=data)
@@ -72,12 +68,3 @@ plt.title("Scatter Plot 4")
 plt.xlabel('Day')
 plt.ylabel('Tip')
 st.pyplot(fig6)
-
-# Histogram of total_bills (plot ketujuh)
-fig7, ax7 = plt.subplots()
-sns.histplot(x='total_bill', data=data, kde=True, hue='sex')
-plt.title("Histogram")
-plt.xlabel('Total Bill')
-plt.ylabel('Frequency')
-plt.legend(title='Sex')
-st.pyplot(fig7)
