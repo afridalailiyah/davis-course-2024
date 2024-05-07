@@ -61,3 +61,6 @@ ax6.set_title("Scatter Plot 4")
 ax6.set_xlabel('Day')
 ax6.set_ylabel('Tip')
 st.pyplot(fig6)
+
+# plotting the scatter chart
+fig = px.scatter(data, x="day", y="tip", color='sex')
