@@ -70,13 +70,13 @@ plt.ylabel('Tip')
 st.pyplot(fig6)
 
 # Create a figure using Plotly Express
-fig = px.histogram(data, x='total_bill', color='sex')
+fig7 = px.histogram(data, x='total_bill', color='sex', title='Histogram')
 
-# Add a trace for male data
-fig.add_trace(px.histogram(male_data, x='total_bill', color='sex', title='Male').data[0])
+# Add histogram for male data
+fig7.add_trace(px.histogram(male_data, x='total_bill', color='sex', title='Male').data[0])
 
-# Add a trace for female data
-fig.add_trace(px.histogram(female_data, x='total_bill', color='sex', title='Female').data[0])
+# Add histogram for female data
+fig7.add_trace(px.histogram(female_data, x='total_bill', color='sex', title='Female').data[0])
 
 # Show the figure
-st.plotly_chart(fig)
+st.plotly_chart(fig7)
