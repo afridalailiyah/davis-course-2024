@@ -1,5 +1,9 @@
-import streamlit as st
+
 import pandas as pd
+
+# Menonaktifkan opsi 'mode.use_inf_as_null'
+with pd.option_context('mode.use_inf_as_null', False):
+import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
