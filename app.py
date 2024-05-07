@@ -54,10 +54,14 @@ ax5.set_xlabel('Total Bill')
 ax5.set_ylabel('Frequency')
 st.pyplot(fig5)
 
-# draw lineplot
+# draw lineplot (plot keenam)
+fig6, ax6 = plt.subplots()
 sns.lineplot(x="sex", y="total_bill", data=data)
-
-# setting the title using Matplotlib
 plt.title('Title using Matplotlib Function')
+st.pyplot(fig6)
 
-sns.scatterplot(x='day', y='tip', data=data,)
+# draw scatterplot (plot ketujuh)
+fig7, ax7 = plt.subplots()
+sns.scatterplot(x='day', y='tip', data=data)
+plt.title('Title using Matplotlib Function')
+st.pyplot(fig7)
