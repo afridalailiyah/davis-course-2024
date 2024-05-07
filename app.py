@@ -52,3 +52,19 @@ ax5.set_title("Histogram")
 ax5.set_xlabel('Total Bill')
 ax5.set_ylabel('Frequency')
 st.pyplot(fig5)
+# draw lineplot
+sns.lineplot(x="sex", y="total_bill", data=data)
+plt.title('Title using Matplotlib Function')
+st.pyplot()
+
+# draw scatter plot using seaborn
+sns.scatterplot(x='day', y='tip', data=data,)
+st.pyplot()
+
+# plotting the scatter chart using plotly
+fig6 = px.scatter(data, x="day", y="tip", color='sex')
+st.plotly_chart(fig6)
+
+# plotting the line chart using plotly
+fig7 = px.line(data, y='tip', color='sex')
+st.plotly_chart(fig7)
