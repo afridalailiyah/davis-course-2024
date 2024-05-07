@@ -4,6 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
+# Menambahkan judul dengan st.title()
+st.title("💻 Menyajikan data dari tips.csv dengan Streamlit!")
+
+# Menambahkan teks dengan st.write()
+st.write("Afrida Lailiyah Hanim / 21082010131")
+
 url = "https://raw.githubusercontent.com/afridalailiyah/davis-course-2024/master/tips.csv"
 
 # reading the database
