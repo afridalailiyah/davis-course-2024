@@ -61,6 +61,12 @@ ax5.set_xlabel('Total Bill')
 ax5.set_ylabel('Frequency')
 st.pyplot(fig5)
 
+# draw lineplot
+sns.lineplot(x="sex", y="total_bill", data=data)
+
+# setting the title using Matplotlib
+plt.title('Title using Matplotlib Function')
+
 # Scatter plot with day against tip (plot keenam)
 fig6, ax6 = plt.subplots()
 sns.scatterplot(x='day', y='tip', data=data, ax=ax6)
