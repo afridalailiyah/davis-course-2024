@@ -68,3 +68,14 @@ plt.title("Scatter Plot 4")
 plt.xlabel('Day')
 plt.ylabel('Tip')
 st.pyplot(fig6)
+
+# Select the data for each group
+male_data = data[data['sex'] == 'Male']['total_bill']
+female_data = data[data['sex'] == 'Female']['total_bill']
+
+# Create a figure using Plotly Express
+fig = px.histogram(data, x='total_bill', color='sex', marginal='rug')
+
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
+
