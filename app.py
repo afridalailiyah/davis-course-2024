@@ -69,10 +69,6 @@ plt.xlabel('Day')
 plt.ylabel('Tip')
 st.pyplot(fig6)
 
-# Select the data for each group
-male_data = data[data['sex'] == 'Male']
-female_data = data[data['sex'] == 'Female']
-
 # Create a figure using Plotly Express
 fig7 = px.histogram(data, x='total_bill', color='sex')
 
