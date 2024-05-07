@@ -74,25 +74,3 @@ ax6.set_title("Scatter Plot 4")
 ax6.set_xlabel('Day')
 ax6.set_ylabel('Tip')
 st.pyplot(fig6)
-
-plot = px.Figure(data=[px.Scatter(
-	y=data['tip'],
-	mode='lines',)
-])
-
-plot.update_layout(
-	xaxis=dict(
-		rangeselector=dict(
-			buttons=list([
-				dict(count=1,
-					step="day",
-					stepmode="backward"),
-			])
-		),
-		rangeslider=dict(
-			visible=True
-		),
-	)
-)
-
-st.plotly_chart(plot)
