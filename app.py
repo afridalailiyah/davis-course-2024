@@ -63,7 +63,7 @@ ax6.set_ylabel('Tip')
 
 # Scatter plot with sex against total_bill (plot ketujuh)
 fig7, ax7 = plt.subplots()
-sns.scatterplot(x='sex', y='total_bill', hue='day', data=data, ax=ax7)
+sns.scatterplot(x='sex', y='total_bill', hue='day', data=data, ax=ax7, dodge=False)
 ax7.set_title("Scatter Plot 5")
 ax7.set_xlabel('Sex')
 ax7.set_ylabel('Total Bill')
