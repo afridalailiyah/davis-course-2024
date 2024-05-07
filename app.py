@@ -36,3 +36,20 @@ ax3.set_xlabel('Day')
 ax3.set_ylabel('Tip/Size')
 ax3.legend()
 st.pyplot(fig3)
+
+# Bar chart with day against tip
+plt.bar(data['day'], data['tip'])
+
+plt.title("Bar Chart")
+
+# Setting the X and Y labels
+plt.xlabel('Day')
+plt.ylabel('Tip')
+
+# histogram of total_bills
+plt.hist(data['total_bill'])
+
+plt.title("Histogram")
+
+# Adding the legends
+plt.show()
