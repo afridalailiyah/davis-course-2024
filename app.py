@@ -19,8 +19,6 @@ plt.ylabel('Tip')
 
 plt.colorbar()
 
-plt.show()
-
 # histogram of total_bills
 plt.hist(data['total_bill'])
 
