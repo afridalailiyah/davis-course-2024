@@ -55,13 +55,18 @@ ax5.set_xlabel('Total Bill')
 ax5.set_ylabel('Frequency')
 st.pyplot(fig5)
 
-# Scatter plot with day against tip (plot keenam)
 fig6, ax6 = plt.subplots()
 sns.scatterplot(x='day', y='tip', data=data, ax=ax6)
 ax6.set_title("Scatter Plot 4")
 ax6.set_xlabel('Day')
 ax6.set_ylabel('Tip')
-st.pyplot(fig6)
 
-# plotting the scatter chart
-fig = px.scatter(data, x="day", y="tip", color='sex')
+# Scatter plot with sex against total_bill (plot ketujuh)
+fig7, ax7 = plt.subplots()
+sns.scatterplot(x='sex', y='total_bill', data=data, ax=ax7)
+ax7.set_title("Scatter Plot 5")
+ax7.set_xlabel('Sex')
+ax7.set_ylabel('Total Bill')
+
+st.pyplot(fig6)
+st.pyplot(fig7)
