@@ -74,7 +74,7 @@ male_data = data[data['sex'] == 'Male']['total_bill']
 female_data = data[data['sex'] == 'Female']['total_bill']
 
 # Create a figure using Plotly Express
-fig = px.histogram(data, x='total_bill', color='sex', marginal='rug')
+fig = px.histogram(data, x='total_bill', color='sex')
 
 # Plot!
 st.plotly_chart(fig, use_container_width=True)
