@@ -5,7 +5,7 @@ import seaborn as sns
 import plotly.express as px
 
 # Menambahkan judul dengan st.title()
-st.title("💻 Menyajikan data dari tips.csv dengan Streamlit!")
+st.title("💻 Menyajikan data tips.csv dengan Streamlit!")
 
 # Menambahkan teks dengan st.write()
 st.write("Afrida Lailiyah Hanim / 21082010131")
