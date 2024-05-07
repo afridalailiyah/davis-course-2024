@@ -62,7 +62,7 @@ ax5.set_ylabel('Frequency')
 st.pyplot(fig5)
 
 # draw lineplot
-sns.lineplot(x="sex", y="total_bill", data=data)
+sns.catplot(x="sex", y="total_bill", kind="point", data=data)
 
 # setting the title using Matplotlib
 plt.title('Title using Matplotlib Function')
